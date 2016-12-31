@@ -7,7 +7,7 @@ class PaperGarbage(Garbage):
         self.name = name
         self.is_squeezed = is_squeezed
 
-    def squeezed(self):
+    def squeeze(self):
         if self.is_squeezed == False:
             self.is_squeezed = True
         return self.is_squeezed
