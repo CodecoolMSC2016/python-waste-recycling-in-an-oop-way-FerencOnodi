@@ -2,4 +2,12 @@ from garbage import Garbage
 
 
 class PaperGarbage(Garbage):
-    pass
+
+    def __init__(self, name, is_squeezed):
+        self.name = name
+        self.is_squeezed = is_squeezed
+
+    def squeezed(self):
+        if self.is_squeezed == False:
+            self.is_squeezed = True
+        return self.is_squeezed
